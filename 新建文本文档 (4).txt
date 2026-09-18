@@ -1,0 +1,5 @@
+{
+  "success": true,
+  "moduleId": 93591941882831,
+  "method": "boot"
+}

